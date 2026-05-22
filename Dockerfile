@@ -16,3 +16,6 @@ RUN mkdir -p /vol/web/media
 RUN mkdir -p /vol/web/static
 
 RUN chown -R django-user:django-user /vol/
+RUN chown -R django-user:django-user /app
+
+USER django-user
